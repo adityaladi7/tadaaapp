@@ -1,0 +1,12 @@
+{
+  "name": "Tada",
+  "description": "An agentic AI companion for Indian senior citizens. You can do it yourself. I'll stand next to you.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
