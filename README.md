@@ -1,20 +1,20 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## Tada — AI companion for senior citizens
 
-# Run and deploy your AI Studio app
+Live demo: [AI Studio link]
+GitHub: this repo
 
-This contains everything you need to run your app locally.
+### Problem
+Senior citizens don't lack reminder apps — they lack confidence to act alone
+without fear of scams or mistakes.
 
-View your app in AI Studio: https://ai.studio/apps/9a8477e7-2a43-4493-833e-349fa7d37d42
+### Solution
+Tada is an agentic Gemini app: voice commands trigger real actions (opens
+fraud checker, screen coach, practice room) via function calling — not just
+chat replies.
 
-## Run Locally
+### Security note
+This demo uses a client-side API key for hackathon speed. Production would
+proxy Gemini calls through a server endpoint to avoid exposing the key.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Testing
+Basic test scaffold included via Vitest (`npm run test`).
