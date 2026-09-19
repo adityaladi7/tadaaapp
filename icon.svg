@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FEF3C7" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#78350F" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background with subtle warm gradient -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Inner circular halo -->
+  <circle cx="256" cy="240" r="160" fill="none" stroke="url(#glow)" stroke-width="12" stroke-dasharray="16 12"/>
+  
+  <!-- Radiant central spark / star of confidence -->
+  <g filter="url(#softShadow)">
+    <!-- 8-point gentle morning star / diya flame essence -->
+    <path d="M256 120 C256 190 280 214 350 214 C280 214 256 238 256 308 C256 238 232 214 162 214 C232 214 256 190 256 120 Z" fill="#FFFDF7"/>
+    <path d="M256 160 C256 210 270 224 320 224 C270 224 256 238 256 288 C256 238 242 224 192 224 C242 224 256 210 256 160 Z" fill="#FEF3C7"/>
+    
+    <!-- Warm heart-flame / spark in center -->
+    <circle cx="256" cy="224" r="24" fill="#D97706"/>
+    <circle cx="256" cy="224" r="14" fill="#FFFDF7"/>
+  </g>
+
+  <!-- Supportive caring arc / safe arms -->
+  <path d="M140 330 C180 390 332 390 372 330" fill="none" stroke="#FFFDF7" stroke-width="24" stroke-linecap="round"/>
+  
+  <!-- "Tada" Text -->
+  <text x="256" y="440" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="52" font-weight="800" fill="#1C1917" text-anchor="middle" letter-spacing="3">TADA</text>
+</svg>
